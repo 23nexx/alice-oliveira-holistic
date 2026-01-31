@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ["Cormorant Garamond", "serif"],
+        sans: ["Inter", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -22,10 +26,18 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          soft: "hsl(var(--primary-soft))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          soft: "hsl(var(--secondary-soft))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+          soft: "hsl(var(--accent-soft))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -34,10 +46,6 @@ export default {
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -62,28 +70,71 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        xl: "calc(var(--radius) + 4px)",
+        "2xl": "calc(var(--radius) + 8px)",
+      },
+      boxShadow: {
+        glass: "var(--shadow-glass)",
+        card: "var(--shadow-card)",
+        glow: "var(--shadow-glow)",
+        "glow-teal": "var(--shadow-glow-teal)",
+        "glow-gold": "var(--shadow-glow-gold)",
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-in-up": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "scale-in": {
+          "0%": { transform: "scale(0.95)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+        "aurora-shift": {
+          "0%, 100%": { backgroundPosition: "0% 50%", opacity: "0.6" },
+          "50%": { backgroundPosition: "100% 50%", opacity: "0.9" },
+        },
+        "glow-pulse": {
+          "0%, 90%, 100%": { boxShadow: "0 0 0 hsl(270 50% 60% / 0)" },
+          "95%": { boxShadow: "0 0 30px hsl(270 50% 60% / 0.4)" },
+        },
+        "particle-drift": {
+          "0%": { transform: "translateY(100vh) scale(0)", opacity: "0" },
+          "10%": { opacity: "0.6" },
+          "90%": { opacity: "0.6" },
+          "100%": { transform: "translateY(-100vh) scale(1)", opacity: "0" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.5s ease-out forwards",
+        "fade-in-up": "fade-in-up 0.6s ease-out forwards",
+        "scale-in": "scale-in 0.3s ease-out forwards",
+        float: "float 6s ease-in-out infinite",
+        shimmer: "shimmer 2s linear infinite",
+        "aurora-shift": "aurora-shift 10s ease-in-out infinite",
+        "glow-pulse": "glow-pulse 8s ease-in-out infinite",
+        "particle-drift": "particle-drift 20s linear infinite",
       },
     },
   },
