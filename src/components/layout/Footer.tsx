@@ -1,4 +1,4 @@
-import { Heart, Instagram, Facebook, Mail } from "lucide-react";
+import { Heart, Mail } from "lucide-react";
 
 const footerLinks = [
   { href: "#terapias", label: "Terapias" },
@@ -11,8 +11,6 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Facebook, href: "#", label: "Facebook" },
   { icon: Mail, href: "mailto:alice@aliceoliveira.pt", label: "Email" },
 ];
 
