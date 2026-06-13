@@ -48,10 +48,6 @@ export const Contacto = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center gap-2 text-foreground/80">
-              <Phone className="w-4 h-4" />
-              <span className="font-medium">+351 {whatsappNumber}</span>
-            </div>
 
             <Button
               size="lg"
