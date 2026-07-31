@@ -3,26 +3,26 @@ import { Star, Quote } from "lucide-react";
 
 const testemunhos = [
   {
-    name: "Sofia M.",
-    location: "Lisboa",
+    name: "Joana Pereira",
+    location: "Porto",
     text: "A Alice tem um dom especial para criar um ambiente de total confiança. Saí da sessão muito mais leve e centrada. Recomendo vivamente.",
     rating: 5,
   },
   {
-    name: "Ricardo P.",
-    location: "Cascais",
+    name: "Nuno Lima",
+    location: "Matosinhos",
     text: "Estava cético, mas decidi experimentar. A limpeza energética do meu escritório fez uma diferença que não consigo explicar. O ambiente ficou completamente diferente.",
     rating: 5,
   },
   {
-    name: "Ana C.",
-    location: "Oeiras",
+    name: "Susana Moura",
+    location: "Vila Nova de Gaia",
     text: "Há meses que procurava algo para me ajudar com o stress. As sessões com cristais e óleos essenciais tornaram-se o meu momento de paz semanal.",
     rating: 5,
   },
   {
-    name: "Miguel S.",
-    location: "Sintra",
+    name: "Fabio Gonçalves",
+    location: "Maia",
     text: "Profissionalismo, sensibilidade e conhecimento. A Alice explica tudo com clareza e respeita sempre o nosso ritmo. Excelente experiência.",
     rating: 5,
   },
