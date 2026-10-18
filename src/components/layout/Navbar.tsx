@@ -22,15 +22,19 @@ export const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
+
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
+
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+
     setIsMobileMenuOpen(false);
   };
 
@@ -80,12 +84,13 @@ export const Navbar = () => {
               size="sm"
               className="text-secondary hover:text-secondary hover:bg-secondary/10"
               onClick={() =>
-                window.open("https://wa.me/351900000000", "_blank")
+                window.open("https://wa.me/351919208806", "_blank")
               }
             >
               <MessageCircle className="w-4 h-4 mr-2" />
               WhatsApp
             </Button>
+
             <Button
               size="sm"
               className="bg-primary hover:bg-primary/90 text-primary-foreground glow-pulse"
@@ -125,17 +130,19 @@ export const Navbar = () => {
                   {link.label}
                 </button>
               ))}
+
               <div className="flex flex-col gap-2 pt-4 border-t border-border/50 mt-2">
                 <Button
                   variant="outline"
                   className="w-full justify-center"
                   onClick={() =>
-                    window.open("https://wa.me/351900000000", "_blank")
+                    window.open("https://wa.me/351919208806", "_blank")
                   }
                 >
                   <MessageCircle className="w-4 h-4 mr-2" />
                   WhatsApp
                 </Button>
+
                 <Button
                   className="w-full justify-center bg-primary hover:bg-primary/90"
                   onClick={() => scrollToSection("#contacto")}
