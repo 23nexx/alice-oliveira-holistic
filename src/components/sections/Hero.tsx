@@ -58,11 +58,9 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="heading-hero text-foreground mb-6"
           >
-            Equilibra a tua energia.
+            Terapias Holísticas e Energéticas
             <br />
-            <span className="text-primary">Acalma a mente.</span>
-            <br />
-            Volta ao centro.
+            <span className="text-primary">para equilíbrio e bem-estar.</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -72,8 +70,9 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="body-large max-w-2xl mx-auto mb-10"
           >
-            Terapias naturais e energéticas para bem-estar e equilíbrio interior.
-            Uma abordagem personalizada para o teu caminho de harmonia.
+            Terapias naturais e energéticas para bem-estar e equilíbrio
+            interior. Uma abordagem personalizada para o teu caminho de
+            harmonia.
           </motion.p>
 
           {/* CTAs */}
