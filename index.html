@@ -2,42 +2,76 @@
 <html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
+    <!-- =====================================================
+         FAVICON / BRANDING
+    ====================================================== -->
+
     <link rel="icon" type="image/png" href="./logo-AO.png?v=4" />
+
     <link rel="shortcut icon" type="image/png" href="./logo-AO.png?v=4" />
 
-    <!-- SEO principal -->
-    <title>Alice Oliveira | Terapias Holísticas e Energéticas</title>
+    <meta name="theme-color" content="#8b5cf6" />
+
+    <!-- =====================================================
+         SEO PRINCIPAL
+    ====================================================== -->
+
+    <title>Terapeuta Holística | Alice Oliveira | Terapias Energéticas</title>
 
     <meta
       name="description"
-      content="Alice Oliveira — terapias holísticas e energéticas para promover equilíbrio, bem-estar e harmonia. Sessões personalizadas de litoterapia, aromaterapia, fitoterapia e limpeza energética de espaços."
+      content="Alice Oliveira, terapeuta holística. Sessões personalizadas de terapias holísticas e energéticas, litoterapia, aromaterapia, fitoterapia e limpeza energética de espaços."
     />
 
     <meta name="author" content="Alice Oliveira" />
+
     <meta
-      name="keywords"
-      content="Alice Oliveira, terapias holísticas, terapias energéticas, litoterapia, aromaterapia, fitoterapia, limpeza energética, bem-estar, equilíbrio energético"
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
 
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
 
     <link rel="canonical" href="https://aliceoliveiraterapias.com/" />
 
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="Alice Oliveira | Terapias Holísticas e Energéticas"
+    <link
+      rel="alternate"
+      hreflang="pt-PT"
+      href="https://aliceoliveiraterapias.com/"
     />
+
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://aliceoliveiraterapias.com/"
+    />
+
+    <!-- =====================================================
+         OPEN GRAPH
+         WhatsApp / Facebook / LinkedIn
+    ====================================================== -->
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:locale" content="pt_PT" />
+
+    <meta
+      property="og:site_name"
+      content="Alice Oliveira Terapias Holísticas"
+    />
+
+    <meta property="og:title" content="Alice Oliveira | Terapeuta Holística" />
 
     <meta
       property="og:description"
-      content="Equilibra a tua energia. Acalma a mente. Descobre terapias holísticas e energéticas personalizadas."
+      content="Terapias holísticas e energéticas personalizadas para equilíbrio, bem-estar e harmonia."
     />
-
-    <meta property="og:type" content="website" />
 
     <meta property="og:url" content="https://aliceoliveiraterapias.com/" />
 
@@ -47,23 +81,21 @@
     />
 
     <meta
-      property="og:site_name"
-      content="Alice Oliveira Terapias Holísticas"
+      property="og:image:alt"
+      content="Alice Oliveira - Terapeuta Holística"
     />
 
-    <meta property="og:locale" content="pt_PT" />
+    <!-- =====================================================
+         TWITTER / X
+    ====================================================== -->
 
-    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
 
-    <meta
-      name="twitter:title"
-      content="Alice Oliveira | Terapias Holísticas e Energéticas"
-    />
+    <meta name="twitter:title" content="Alice Oliveira | Terapeuta Holística" />
 
     <meta
       name="twitter:description"
-      content="Terapias holísticas e energéticas para bem-estar, equilíbrio e harmonia."
+      content="Terapias holísticas e energéticas personalizadas para equilíbrio, bem-estar e harmonia."
     />
 
     <meta
@@ -71,26 +103,85 @@
       content="https://aliceoliveiraterapias.com/logo-AO.png?v=2"
     />
 
-    <!-- Dados estruturados -->
+    <meta
+      name="twitter:image:alt"
+      content="Alice Oliveira - Terapeuta Holística"
+    />
+
+    <!-- =====================================================
+         DADOS ESTRUTURADOS / SCHEMA.ORG
+    ====================================================== -->
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Alice Oliveira Terapias Holísticas",
-        "url": "https://aliceoliveiraterapias.com/",
-        "image": "https://aliceoliveiraterapias.com/logo-AO.png",
-        "description": "Terapias holísticas e energéticas para bem-estar, equilíbrio e harmonia.",
-        "areaServed": {
-          "@type": "Country",
-          "name": "Portugal"
-        }
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://aliceoliveiraterapias.com/#alice-oliveira",
+            "name": "Alice Oliveira",
+            "jobTitle": "Terapeuta Holística",
+            "url": "https://aliceoliveiraterapias.com/",
+            "image": "https://aliceoliveiraterapias.com/logo-AO.png",
+            "description": "Terapeuta holística com sessões personalizadas de terapias holísticas e energéticas."
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://aliceoliveiraterapias.com/#business",
+            "name": "Alice Oliveira Terapias Holísticas",
+            "url": "https://aliceoliveiraterapias.com/",
+            "logo": "https://aliceoliveiraterapias.com/logo-AO.png",
+            "image": "https://aliceoliveiraterapias.com/logo-AO.png",
+            "description": "Sessões personalizadas de terapias holísticas e energéticas, incluindo litoterapia, aromaterapia, fitoterapia e limpeza energética de espaços.",
+            "areaServed": {
+              "@type": "Country",
+              "name": "Portugal"
+            },
+            "founder": {
+              "@id": "https://aliceoliveiraterapias.com/#alice-oliveira"
+            },
+            "knowsAbout": [
+              "Terapias Holísticas",
+              "Terapias Energéticas",
+              "Litoterapia",
+              "Aromaterapia",
+              "Fitoterapia",
+              "Limpeza Energética de Espaços"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://aliceoliveiraterapias.com/#website",
+            "url": "https://aliceoliveiraterapias.com/",
+            "name": "Alice Oliveira Terapias Holísticas",
+            "inLanguage": "pt-PT",
+            "publisher": {
+              "@id": "https://aliceoliveiraterapias.com/#business"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://aliceoliveiraterapias.com/#webpage",
+            "url": "https://aliceoliveiraterapias.com/",
+            "name": "Terapeuta Holística | Alice Oliveira | Terapias Energéticas",
+            "description": "Alice Oliveira, terapeuta holística. Sessões personalizadas de terapias holísticas e energéticas, litoterapia, aromaterapia, fitoterapia e limpeza energética de espaços.",
+            "isPartOf": {
+              "@id": "https://aliceoliveiraterapias.com/#website"
+            },
+            "about": {
+              "@id": "https://aliceoliveiraterapias.com/#alice-oliveira"
+            },
+            "inLanguage": "pt-PT"
+          }
+        ]
       }
     </script>
-    <script type="module" crossorigin src="./assets/index-D-EydLXb.js"></script>
+    <script type="module" crossorigin src="./assets/index-CRUk7Wtk.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-Dwp4gWzJ.css">
   </head>
 
   <body>
     <div id="root"></div>
+
   </body>
 </html>
