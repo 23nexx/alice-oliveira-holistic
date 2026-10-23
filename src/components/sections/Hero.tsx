@@ -14,6 +14,7 @@ const trustChips = [
 export const Hero = () => {
   const scrollToSection = (id: string) => {
     const element = document.querySelector(id);
+
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -48,7 +49,7 @@ export const Hero = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/60 backdrop-blur-sm border border-border/50 text-sm text-muted-foreground mb-8"
           >
             <Sparkles className="w-4 h-4 text-accent" />
-            <span>Terapias Holísticas & Energéticas</span>
+            <span>Terapeuta Holística • Terapias Energéticas</span>
           </motion.div>
 
           {/* Headline */}
@@ -58,9 +59,13 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="heading-hero text-foreground mb-6"
           >
-            Terapias Holísticas e Energéticas
+            Terapeuta Holística
             <br />
-            <span className="text-primary">para equilíbrio e bem-estar.</span>
+            <span className="text-primary">
+              Terapias Holísticas e Energéticas
+            </span>
+            <br />
+            para equilíbrio e bem-estar
           </motion.h1>
 
           {/* Subheadline */}
@@ -70,9 +75,10 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="body-large max-w-2xl mx-auto mb-10"
           >
-            Terapias naturais e energéticas para bem-estar e equilíbrio
-            interior. Uma abordagem personalizada para o teu caminho de
-            harmonia.
+            Sessões personalizadas de terapias holísticas e energéticas para
+            promover equilíbrio, bem-estar e harmonia interior. Litoterapia,
+            aromaterapia, fitoterapia e limpeza energética de espaços numa
+            abordagem individual e acolhedora.
           </motion.p>
 
           {/* CTAs */}
@@ -90,6 +96,7 @@ export const Hero = () => {
               Marcar Sessão
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+
             <Button
               variant="outline"
               size="lg"
@@ -129,7 +136,11 @@ export const Hero = () => {
         <motion.div
           className="w-6 h-10 rounded-full border-2 border-primary/30 flex items-start justify-center p-2"
           animate={{ y: [0, 5, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
         >
           <div className="w-1.5 h-3 rounded-full bg-primary/50" />
         </motion.div>
